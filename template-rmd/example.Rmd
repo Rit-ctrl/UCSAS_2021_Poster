@@ -1,0 +1,53 @@
+---
+author: "<your-email-here@something.com>"
+output:
+  slidy_presentation: default
+  beamer_presentation:
+    theme: default
+    colortheme: default
+    fonttheme: serif
+    includes:
+      in_header: preamble.tex
+---
+
+# Are soccer clubs doing throw-ins correctly?
+
+_Rithic Kumar N^1^, Second Author^2^_  
+\footnotesize ^1^ University One  
+\footnotesize ^2^ Institution Two
+  
+**Abbreviated abstract:** Abbreviate abstract of ~75 words.  
+  
+**Related publications:** (up to 2 references)
+
+* F. Author et al, Journal 2 (5), 1234 (2019)  
+* F. Author et al, Journal 1 (5), 1234 (2018)  
+
+# Question
+
++ Throw-ins are the most common set-piece events in soccer
+  * Insert stat from FBREF
++ In the English Premier League, only Liverpool have a dedicated throw-in coach
++ How can we measure effectiveness of throw-ins?
+  * Previous study by Mckinley ranks throw-ins in MLS based on possession retention
++ What happens when throw-ins are not effective?
+
++ Clearly identify the challenge you are solving  
+	* Explain previous work (put your research in context)  
+	* Fundamental information or terms needed  
++ Your strategy for overcoming the challenge
+
+# Methods
+
+Possible contents for slide  
+
+* Explanation(s) of methods used to obtain data or perform theoretical modeling  
+* Schematics of testing set-ups  
+* Diagrams of devices used  
+
+# Findings
+
+Possible contents for slide  
+
+* Primary experimental data proving hypothesis
+* Key take-home message
