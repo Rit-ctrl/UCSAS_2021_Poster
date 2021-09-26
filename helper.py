@@ -77,3 +77,5 @@ def calc_seq(df,throw_in_idx):
                         df.loc[throw_in_idx[-1]]['teamId'],
                         'Successful')))
     return t_seq
+
+sum_cols = ['minute','second','teamId','x','y','endX','endY','type_displayName','outcomeType_displayName','name','qualifiers']
