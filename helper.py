@@ -62,20 +62,23 @@ def calc_seq(df,throw_in_idx):
     Output:
     Returns list of tuples containing sequence start end indices
     '''
-    from tqdm.notebook import tqdm
+#     from tqdm.notebook import tqdm
     t_seq = []
-    for i,s_idx in enumerate(tqdm(throw_in_idx[:-1])):
+    for i,s_idx in enumerate(throw_in_idx[:-1]):
         
-        e_idx = sequences(df.loc[s_idx:throw_in_idx[i+1]],
-                        'teamId','outcomeType_value',
-                        df.loc[s_idx]['teamId'],
+        e_idx = sequences(df.iloc[s_idx:throw_in_idx[i+1]],
+                        'teamId','outcomeType_displayName',
+                        df.iloc[s_idx]['teamId'],
                         'Successful')
         t_seq.append((s_idx,e_idx))
 
-    t_seq.append((throw_in_idx[-1],sequences(df.loc[throw_in_idx[-1]:],
-                        'teamId','outcomeType_value',
-                        df.loc[throw_in_idx[-1]]['teamId'],
+    t_seq.append((throw_in_idx[-1],sequences(df.iloc[throw_in_idx[-1]:],
+                        'teamId','outcomeType_displayName',
+                        df.iloc[throw_in_idx[-1]]['teamId'],
                         'Successful')))
     return t_seq
 
 sum_cols = ['minute','second','teamId','x','y','endX','endY','type_displayName','outcomeType_displayName','name','qualifiers']
+
+end_qualifiers = ['Goal','Foul','KeeperPickup','SavedShot','Save', 'OffsideGiven', 'OffsideProvoked',
+       'OffsidePass','CornerAwarded', 'End', 'Claim','MissedShots']
