@@ -82,3 +82,5 @@ sum_cols = ['minute','second','teamId','x','y','endX','endY','type_displayName',
 
 end_qualifiers = ['Goal','Foul','KeeperPickup','SavedShot','Save', 'OffsideGiven', 'OffsideProvoked',
        'OffsidePass','CornerAwarded', 'End', 'Claim','MissedShots']
+
+ex_list = ['FormationChange','SubstitutionOn','SubstitutionOff','Card']
